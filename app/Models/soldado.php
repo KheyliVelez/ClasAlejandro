@@ -20,4 +20,11 @@ class soldado extends Model
     public function compañia(){
         return $this->hasMany('App\Models\compañia');
     }
+
+    
+     //Relacion Muchos a Muchos
+
+    public function servicio(){
+        return $this->belongsToMany('App\Models\servicio');
+    }
 }
