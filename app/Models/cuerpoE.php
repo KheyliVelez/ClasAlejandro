@@ -8,7 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class cuerpoE extends Model
 {
     use HasFactory;
-   
+    public function servicios(){
+        return $this->morphTo();
+    }
+}
   
 
 }

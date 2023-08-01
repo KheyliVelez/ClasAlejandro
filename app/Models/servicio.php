@@ -8,4 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class servicio extends Model
 {
     use HasFactory;
+    public function servicios(){
+        return $this->morphTo();
+    }
 }

@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class compañia extends Model
 {
     use HasFactory;
+    public function compañias(){
+        return $this->morphTo();
+    }
+    
+
 }

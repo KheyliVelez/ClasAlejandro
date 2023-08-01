@@ -21,10 +21,8 @@ class soldado extends Model
         return $this->hasMany('App\Models\compañia');
     }
 
-    
-     //Relacion Muchos a Muchos
-
+// relacion polimorfica
     public function servicio(){
-        return $this->belongsToMany('App\Models\servicio');
+        return $this->morphOne('App\Models\servicio','servicios');
     }
 }
