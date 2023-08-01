@@ -13,14 +13,14 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('cuartels', function (Blueprint $table) {
+        Schema::create('cuerpo', function (Blueprint $table) {
             $table->id();
-            $table->string('nom_c');
-            $table->string('ubi_c');
+      /*       $table->string('denom_ce');
             $table->timestamps();
-            //relacion 1 a muchos
+
             $table->foreign('soldado')->references('id')
             ->on('users')->onDelete('set null');
+            $table->timestamps(); */
         });
     }
 
@@ -31,6 +31,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('cuartels');
+        Schema::dropIfExists('cuerpo');
     }
 };

@@ -12,12 +12,6 @@ return new class extends Migration
         Schema::create('servicios', function (Blueprint $table) {
             $table->id();
             $table->string('acti_ser');
-
-            
-            $table->unsignedBigInteger('cod_ser1')->nullable();
-            $table->string('cod_s1');
-            $table->primary(['cod_ser1','cod_s1']);
-          
             $table->timestamps();
         });
     }

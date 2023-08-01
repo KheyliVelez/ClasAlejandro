@@ -10,11 +10,12 @@ return new class extends Migration
      
     public function up()
     {
-        Schema::create('compañias', function (Blueprint $table) {
+        Schema::create('companias', function (Blueprint $table) {
             $table->id();
             $table->string('acti_comp');
             $table->timestamps();
 
+            /* 
             $table->foreign('soldado')
             ->references('id')
             ->on('soldado')
@@ -23,7 +24,7 @@ return new class extends Migration
             
             $table->unsignedBigInteger('cod_c1')->nullable();
             $table->string('num_com2');
-            $table->primary(['cod_c1','num_com2']);
+            $table->primary(['cod_c1','num_com2']); */
         });
     }
 
